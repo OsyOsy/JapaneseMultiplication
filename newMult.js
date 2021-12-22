@@ -129,18 +129,6 @@ function displayLines(number1, number2) {
     if (numberd != 0) drawMultiplicationLine4(numberd)
 }
 
-//Example Multa = drawMultiplicationLine1 (number1, draw = false) 
-function intercept2of4(Multa, Multb) {
-    let intersectionArr = new Array();
-    for (let i = 0; i< Multa.length;i++){
-        for (let j = 0; j< Multb.length;j++){
-            let point = calculateIntersection(Multa[i][0], Multa[i][1], Multb[j][0], Multb[j][1], draw = false)
-            console.log(point)
-            intersectionArr.push(point);
-        }
-    }
-    return intersectionArr
-}
 
 
 function MiddletotalInterSection(number1, number2){
@@ -286,22 +274,30 @@ function calculateIntersection(p1, p2, p3, p4) {
 
 
 
-function totalRHS (){
-   /*  ctx.font = "30px Comic Sans MS";
-    ctx.fillStyle = "red";
-    ctx.textAlign = "center";
-    //ctx.rotate(Math.PI*2/(Math.PI*6));
-    ctx.fillText("Hello World", canvas.width/2, canvas.height/2); */
-    ctx.font = "30px Comic Sans MS";
-    ctx.fillStyle = "red";
-    ctx.textAlign = "center";
-    ctx.translate(100,100);  
-    ctx.save();
-    ctx.rotate(Math.PI);  
-    ctx.fillText("TEST", 10, 10);
-    ctx.restore();
 
-}
+
+
+
+
+
+
+//NEXT TASK ADD INTO TOTALS FOR INTERSECTIONS
+  function totalRHS (){
+    /*  ctx.font = "30px Comic Sans MS";
+     ctx.fillStyle = "red";
+     ctx.textAlign = "center";
+     //ctx.rotate(Math.PI*2/(Math.PI*6));
+     ctx.fillText("Hello World", canvas.width/2, canvas.height/2); */
+     ctx.font = "30px Comic Sans MS";
+     ctx.fillStyle = "red";
+     ctx.textAlign = "center";
+     ctx.translate(100,100);  
+     ctx.save();
+     ctx.rotate(Math.PI);  
+     ctx.fillText("TEST", 10, 10);
+     ctx.restore();
+ 
+ }
 
 
 
@@ -407,3 +403,17 @@ nextStepBtn.addEventListener("click", () => {
         }
         return intersectionArr.length
     } */
+
+
+    //Example Multa = drawMultiplicationLine1 (number1, draw = false) 
+/* function intercept2of4(Multa, Multb) {
+    let intersectionArr = new Array();
+    for (let i = 0; i< Multa.length;i++){
+        for (let j = 0; j< Multb.length;j++){
+            let point = calculateIntersection(Multa[i][0], Multa[i][1], Multb[j][0], Multb[j][1], draw = false)
+            console.log(point)
+            intersectionArr.push(point);
+        }
+    }
+    return intersectionArr
+} */
